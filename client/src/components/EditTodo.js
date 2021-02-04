@@ -4,6 +4,16 @@ const EditTodo = ({ todo }) => {
     //console.log(todo);
     const [description, setDescription] = useState(todo.description);
 
+    //edit description function
+    const updateDescription = async() => {
+        try{
+
+        } catch(err) {
+            console.error(err.message)
+        }
+
+    }
+
     return (
         <Fragment>
             
@@ -36,7 +46,12 @@ const EditTodo = ({ todo }) => {
                 </div>
 
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-warning" data-dismiss="modal">
+                  <button 
+                    type="button" 
+                    class="btn btn-warning"
+                    data-dismiss="modal"
+                    onClick={e => updateDescription(e)}
+                  >
                     Edit
                   </button>
                   <button type="button" class="btn btn-danger" data-dismiss="modal">
