@@ -31,6 +31,7 @@ const EditTodo = ({ todo }) => {
                     type="text" 
                     className="form-control"
                     value={description} 
+                    onChange={e => setDescription(e.target.value)}
                   />
                 </div>
 
