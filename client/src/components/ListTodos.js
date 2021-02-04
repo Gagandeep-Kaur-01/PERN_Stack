@@ -5,9 +5,13 @@ const ListTodos = () => {
     const [todos, setTodos] = useState([])
 
     //delete todo function
-    const deleteTodo = async () => {
+    const deleteTodo = async (id) => {
         try{
+            const deleteTodo = await fetch(`http://localhost:5000/todos/${id}`, {
+                method: "DELETE"
+            });
 
+            console.log(deleteTodo);
         } catch (err) {
             console.error(err.message)
         }
