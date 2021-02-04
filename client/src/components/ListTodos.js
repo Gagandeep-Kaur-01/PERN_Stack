@@ -54,7 +54,7 @@ const ListTodos = () => {
                         </button>
                     </td>
                     <td>
-                        <button>
+                        <button className="btn btn-danger">
                             Delete
                         </button>
                     </td>
