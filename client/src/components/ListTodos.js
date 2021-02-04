@@ -44,7 +44,7 @@ const ListTodos = () => {
             */}
 
             {todos.map(todo => (
-                <tr>
+                <tr key={todo.todo_id}>
                     <td>
                         {todo.description}
                     </td>
