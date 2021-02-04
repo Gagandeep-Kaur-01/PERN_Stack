@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
+import EditTodo from "./EditTodo";
 
 const ListTodos = () => {
 
@@ -63,9 +64,7 @@ const ListTodos = () => {
                         {todo.description}
                     </td>
                     <td>
-                        <button>
-                            Edit
-                        </button>
+                        <EditTodo />
                     </td>
                     <td>
                         <button 
