@@ -9,7 +9,17 @@ app.use(express.json()); // to access json data
 
 // ------- Routes ------ //
 
+
 // create a todo
+app.post("/todos", async(res, req) => {
+    try {
+        console.log(req.body);
+    }  
+    catch (err) {
+        console.error(err.message);
+    }
+  
+})
 
 // get all todos
 
