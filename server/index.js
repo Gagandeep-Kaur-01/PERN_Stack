@@ -74,6 +74,13 @@ app.put("/todos/:id", async(req, res) => {
 })
 
 // delete a todo
+app.delete("/todos/:id", async(req, res) => {
+    try {
+
+    } catch (err) {
+        console.log(err.message)
+    }
+})
 
 app.listen(5000, () => {
     console.log("server has started on port: 5000");
