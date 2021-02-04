@@ -8,3 +8,5 @@ CREATE TABLE todo(
 SELECT * FROM todo;
 
 INSERT INTO todo(description) VALUES ('Hello');
+
+SELECT description FROM todo;
