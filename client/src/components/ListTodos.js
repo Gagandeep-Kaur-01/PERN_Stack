@@ -13,12 +13,13 @@ const ListTodos = () => {
             </tr>
           </thead>
           <tbody>
-              {/* */}
-            <tr>
-              <td>.......</td>
-              <td>button</td>
-              <td>button</td>
-            </tr>      
+            {/* <tr>
+                <td>.......</td>
+                <td>button</td>
+                <td>button</td>
+                </tr>    
+            */}
+              
           </tbody>
          </table>
       </Fragment>
