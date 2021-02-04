@@ -57,6 +57,9 @@ app.get("/todos/:id", async(req, res) => {
 })
 
 // update a todo
+app.put("/todos/:id", async(req, res) => {
+    
+})
 
 // delete a todo
 
