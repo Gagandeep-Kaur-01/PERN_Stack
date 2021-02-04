@@ -48,6 +48,16 @@ const ListTodos = () => {
                     <td>
                         {todo.description}
                     </td>
+                    <td>
+                        <button>
+                            Edit
+                        </button>
+                    </td>
+                    <td>
+                        <button>
+                            Delete
+                        </button>
+                    </td>
                 </tr>
             ))}
               
