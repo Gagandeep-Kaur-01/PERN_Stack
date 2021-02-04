@@ -4,6 +4,15 @@ const ListTodos = () => {
 
     const [todos, setTodos] = useState([])
 
+    //delete todo function
+    const deleteTodo = async () => {
+        try{
+
+        } catch (err) {
+            console.error(err.message)
+        }
+    }
+
     const getTodos = async () => {
         try {
 
