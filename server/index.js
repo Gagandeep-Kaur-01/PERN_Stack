@@ -15,7 +15,7 @@ app.post("/todos", async(req, res) => {
     try {
         const { description } = req.body;
         const newTodo = await pool.query (
-            "INSERT INTO todo (description) VALUES($1)",
+            "INSERT INTO todo (description) VALUES($1) RETURNING * ",  // letting to return values from after run insert or update statements
              [description]
         );
 
