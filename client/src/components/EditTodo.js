@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 const EditTodo = () => {
     return (
-        <h1>
-            Edit Todo
-        </h1>
+        <Fragment>
+            
+        </Fragment>
     )
 }
 
