@@ -3,7 +3,7 @@ import React, { Fragment, useState } from "react";
 const EditTodo = ({ todo }) => {
     //console.log(todo);
     const [description, setDescription] = useState(todo.description);
-    
+
     return (
         <Fragment>
             
@@ -23,7 +23,11 @@ const EditTodo = ({ todo }) => {
               </div>
     
               <div class="modal-body">
-                <input type="text" className="form-control" />
+                <input 
+                  type="text" 
+                  className="form-control"
+                  value={description} 
+                />
               </div>
 
               <div class="modal-footer">
